@@ -1,33 +1,35 @@
 import { useState } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
-import { useTheme } from "../../hooks/useTheme";
-import { useLang } from "../../hooks/useLang";
+import { useTheme } from '../../shared/hooks/useTheme';
+import { useLang } from '../../shared/hooks/useLang';
+import { useTranslation } from 'react-i18next';
 
 export default function Header() {
     const { theme, toggleTheme } = useTheme()
-    const { lang, toggleLang, t } = useLang()
+    const { lang, toggleLang } = useLang()
+    const { t } = useTranslation()
 
     const [isOpen, setIsOpen] = useState(false);
 
 
     return (
-        <header className="fixed top-0 left-0 w-full z-50 backdrop-blur bg-white/30 dark:bg-black/60 border-b border-gray-200 dark:border-gray-800">
-            <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+        <header className='fixed top-0 left-0 w-full z-50 bg-white/30 dark:bg-black/60 border-b border-gray-200 dark:border-gray-800'>
+            <div className='max-w-6xl px-4 mx-auto h-16 flex items-center justify-between'>
                 {/* Logo */}
-                <div className="text-xl font-semibold tracking-tight">
+                <div className="text-2xl font-semibold tracking-tight">
                     MyPortfolio
                 </div>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-                    <a href="#projects" className="hover:text-primary transition-colors">
-                        {t("about")}
+                <nav className="hidden md:flex items-center gap-6 text-m font-medium">
+                    <a href="#projects" className="transition-colors">
+                        {t('header.about')}
                     </a>
-                    <a href="#about" className="hover:text-primary transition-colors">
-                        {t("projects")}
+                    <a href="#about" className="transition-colors">
+                        {t('header.projects')}
                     </a>
-                    <a href="#contact" className="hover:text-primary transition-colors">
-                        {t("contact")}
+                    <a href="#contact" className="transition-colors">
+                        {t('header.contact')}
                     </a>
                 </nav>
 
@@ -59,27 +61,27 @@ export default function Header() {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="md:hidden px-4 pb-4 pt-2 space-y-2 bg-white dark:bg-black border-t border-gray-200 dark:border-gray-800">
+                <div className="text-center md:hidden px-4 py-4 space-y-2 bg-white dark:bg-black">
                     <a
                         href="#projects"
                         className="block text-sm font-medium hover:text-primary transition-colors"
                         onClick={() => setIsOpen(false)}
                     >
-                        {t("projects")}
+                        {t('header.projects')}
                     </a>
                     <a
                         href="#about"
                         className="block text-sm font-medium hover:text-primary transition-colors"
                         onClick={() => setIsOpen(false)}
                     >
-                        {t("about")}
+                        {t('header.about')}
                     </a>
                     <a
                         href="#contact"
                         className="block text-sm font-medium hover:text-primary transition-colors"
                         onClick={() => setIsOpen(false)}
                     >
-                        {t("contact")}
+                        {t('header.contact')}
                     </a>
                 </div>
             )}

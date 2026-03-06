@@ -1,22 +1,24 @@
 import { useState, type PropsWithChildren } from "react";
-import { LangContext, type LangType } from "../context/lang.context";
-import { translations } from "../i18n";
+import { LangContext, type LangType } from "../../context/lang.context";
+import i18n from '../features/i18n';
 
 export function LangProvider({ children }: PropsWithChildren) {
     const [lang, setLang] = useState<LangType>(
         () => localStorage.getItem('lang') as LangType || 'ru'
     )
 
-    const t = (key: keyof typeof translations['ru']) => translations[lang][key]
+    const toggleLang = () => {
+        const newLang = lang === 'ru' ? 'en' : 'ru';
+        setLang(newLang)
+        i18n.changeLanguage(newLang)
+    }
 
-    const toggleLang = () => setLang(prev => (prev === 'ru' ? 'en' : 'ru'))
 
     return (
         <LangContext.Provider
             value={{
                 lang,
                 toggleLang,
-                t
             }}
         >
             {children}
