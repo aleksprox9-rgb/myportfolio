@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from '../../shared/hooks/useTheme';
-import { useLang } from '../../shared/hooks/useLang';
 import { useTranslation } from 'react-i18next';
+import { useLang } from '../../shared/hooks/useLang';
 
 export default function Header() {
     const { theme, toggleTheme } = useTheme()
