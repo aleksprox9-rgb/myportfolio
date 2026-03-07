@@ -1,5 +1,5 @@
 import { DomainCard } from "./DomainCard";
-import { SkillsSection } from "../../SkillsSection";
+import { SkillsSection } from "./SkillsSection";
 import { SiApachekafka, SiBun, SiDocker, SiGit, SiGo, SiPostgresql, SiReact, SiRedis, SiTypescript, SiVim, SiVite } from 'react-icons/si';
 
 export default function ExampleSkills() {
