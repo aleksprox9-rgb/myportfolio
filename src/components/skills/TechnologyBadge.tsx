@@ -2,12 +2,15 @@ import type { Technology } from "../../types";
 
 
 export function TechnologyBadge({
+  Icon,
   name,
   description,
 }: Technology) {
 
   return (
-    <div className="group relative px-3 py-1.5 text-sm rounded-xl border border-neutral-300 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800 cursor-default transition-transform hover:scale-105">
+    <div className="group flex flex-col items-center relative w-20 py-1.5 text-sm rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800 cursor-default transition-transform hover:scale-105">
+      <Icon size={32}/>
+
       {name}
 
       {description && (
