@@ -4,4 +4,5 @@ export type Technology = {
     Icon: IconType;
     name: string;
     description?: string;
+    color?: string;
 }
