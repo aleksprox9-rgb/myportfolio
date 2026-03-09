@@ -7,7 +7,7 @@ type SkillsSectionProps = {
 
 export function SkillsSection({ title, children }: SkillsSectionProps) {
     return (
-        <section className='w-full absolute top-40 left-0 flex'>
+        <section className='w-full left-0 flex'>
             <div className='max-w-6xl px-3 mx-auto flex items-center justify-between flex-col gap-4'>
                 <h2 className='text-4xl font-semibold tracking-tighter'>
                     {title}

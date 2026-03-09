@@ -1,11 +1,11 @@
-import ExampleSkills from '../components/skills/ExampleSkills'
+import { Body } from '../widgets/body/Body'
 import Header from '../widgets/header/Header'
 
 function App() {
   return (
     <div>
       <Header />
-      <ExampleSkills />
+      <Body />
     </div>
   )
 }

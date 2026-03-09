@@ -3,6 +3,7 @@ import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from '../../shared/hooks/useTheme';
 import { useTranslation } from 'react-i18next';
 import { useLang } from '../../shared/hooks/useLang';
+import { HeaderNav } from '../../constants/navigation';
 
 export default function Header() {
     const { theme, toggleTheme } = useTheme()
@@ -22,15 +23,11 @@ export default function Header() {
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center gap-6 text-m font-medium">
-                    <a href="#projects" className="transition-colors">
-                        {t('header.about')}
-                    </a>
-                    <a href="#about" className="transition-colors">
-                        {t('header.projects')}
-                    </a>
-                    <a href="#contact" className="transition-colors">
-                        {t('header.contact')}
-                    </a>
+                    {HeaderNav.navLinks.map(({ id, link }) => (
+                        <a href={link} className='transition-colors'>
+                            {t(`${HeaderNav.path}${id}`)}
+                        </a>
+                    ))}
                 </nav>
 
                 {/* Controls */}

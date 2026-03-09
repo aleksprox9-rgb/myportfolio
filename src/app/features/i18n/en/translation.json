@@ -1,61 +1,47 @@
 {
-    "header": {
-        "projects": "Projects",
-        "about": "About",
-        "contact": "Contact"
+  "header": {
+    "nav": {
+      "projects": "Projects",
+      "about": "About",
+      "contact": "Contact"
+    }
+  },
+  "body": {
+    "about": {
+      "title": "About me",
+      "bio": "I am a full-stack developer focused on building scalable web applications. I work across both frontend and backend, paying attention to architecture, performance and long-term maintainability. \n\n My journey started with backend development in Python to understand core programming concepts. Later I moved to Golang and expanded my stack with TypeScript and React, allowing me to design and build complete applications from interface to infrastructure.",
+      "stats": {
+        "experience": { "label": "Years learning development", "value": "3+" },
+        "focus": { "label": "Development focus", "value": "Full-stack & Architecture" },
+        "priority": { "label": "Architecture priority", "value": "Maintainability" }
+      }
     },
     "skills": {
-        "frontend": {
-            "technologies": [
-                {
-                    "name": "React",
-                    "description": "Component architecture, hooks, performance optimization."
-                },
-                {
-                    "name": "TypeScript",
-                    "description": "Strong typing, generics, scalable frontend architecture."
-                },
-                {
-                    "name": "Vite",
-                    "description": "Fast dev environment and optimized builds."
-                }
-            ]
-        },
-        "backend": {
-            "technologies": [
-                {
-                    "name": "Go",
-                    "description": "REST APIs, concurrency, clean architecture."
-                },
-                {
-                    "name": "PostgreSQL",
-                    "description": "Schema design, indexing, transactions."
-                },
-                {
-                    "name": "Redis",
-                    "description": "Caching and performance optimization."
-                },
-                {
-                    "name": "Kafka",
-                    "description": "Event-driven communication."
-                }
-            ]
-        },
-        "tools": {
-            "technologies": [
-                {
-                    "name": "Git"
-                },
-                {
-                    "name": "Docker"
-                },
-                {
-                    "name": "Bun"
-                },
-                {
-                    "name": "Vim"
-                }
-            ]
+      "frontend": {
+        "title": "Frontend",
+        "items": {
+          "react": { "name": "React", "desc": "Component architecture, hooks, performance optimization." },
+          "typescript": { "name": "TypeScript", "desc": "Strong typing, generics, scalable frontend architecture." },
+          "vite": { "name": "Vite", "desc": "Fast dev environment and optimized builds." }
         }
+      },
+      "backend": {
+        "title": "Backend",
+        "items": {
+          "go": { "name": "Go", "desc": "REST APIs, concurrency, clean architecture." },
+          "postgresql": { "name": "PostgreSQL", "desc": "Schema design, indexing, transactions." },
+          "kafka": { "name": "Kafka", "desc": "Event-driven communication." }
+        }
+      },
+      "tools": {
+        "title": "Tools",
+        "items": {
+          "git": { "name": "Git", "desc": "Version control" },
+          "docker": { "name": "Docker", "desc": "Containerization" },
+          "bun": { "name": "Bun", "desc": "Fast runtime" },
+          "vim": { "name": "Vim", "desc": "Efficiency" }
+        }
+      }
     }
+  }
 }
