@@ -1,0 +1,52 @@
+{
+  "header": {
+    "nav": {
+      "projects": "Projects",
+      "about": "About",
+      "contact": "Contact"
+    }
+  },
+  "body": {
+    "about": {
+      "title": "About me",
+      "bio": "I am a full-stack developer focused on building scalable web applications. I work across both frontend and backend, paying attention to architecture, performance and long-term maintainability. \n\n My journey started with backend development in Python to understand core programming concepts. Later I moved to Golang and expanded my stack with TypeScript and React, allowing me to design and build complete applications from interface to infrastructure.",
+      "stats": [
+        { "label": "Years learning development", "value": "3+" },
+        { "label": "Techonologies used", "value": "10+" },
+        { "label": "Development focus", "value": "Full-stack & Architecture" },
+        { "label": "Architecture priority", "value": "Maintainability" }
+      ]
+    },
+    "skills": {
+      "title": "Skills",
+      "frontend": {
+        "title": "Frontend",
+        "desc": "This is the «face» of the website. Everything you see, click, and interact with: from intuitive buttons to smooth animations and mobile-friendly layouts.",
+        "technologies": {
+          "react": { "name": "React", "desc": "Component architecture, hooks, performance optimization." },
+          "typescript": { "name": "TypeScript", "desc": "Strong typing, generics, scalable frontend architecture." },
+          "vite": { "name": "Vite", "desc": "Fast dev environment and optimized builds." }
+        }
+      },
+      "backend": {
+        "title": "Backend",
+        "desc": "This is the «brain» and logic of the project. It handles data, user registration, and everything happening «under the hood» to ensure the site runs fast and securely.",
+        "technologies": {
+          "go": { "name": "Go", "desc": "REST APIs, concurrency, clean architecture." },
+          "postgresql": { "name": "PostgreSQL", "desc": "Schema design, indexing, transactions." },
+          "kafka": { "name": "Kafka", "desc": "Event-driven communication." }
+        }
+      },
+      "tools": {
+        "title": "Tools",
+        "desc": "My professional toolkit. The technologies and software that help me write clean code, collaborate effectively, and turn ideas into finished products.",
+        "technologies": {
+          "git": { "name": "Git", "desc": "Version control" },
+          "docker": { "name": "Docker", "desc": "Containerization" },
+          "bun": { "name": "Bun", "desc": "Fast runtime" },
+          "vim": { "name": "Vim", "desc": "Efficiency" }
+        }
+      }
+    }
+  }
+}
