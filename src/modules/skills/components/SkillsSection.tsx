@@ -1,21 +1,22 @@
 import type { ReactNode } from "react";
 
 type SkillsSectionProps = {
-    title: string;
-    children: ReactNode;
-}
+  title: string;
+  children: ReactNode;
+};
 
 export function SkillsSection({ title, children }: SkillsSectionProps) {
-    return (
-        <section className='w-full py-16'>
-            <div className='mx-auto max-w-6xl px-4'>
-                <h2 className='mb-10 text-center text-4xl font-bold tracking-tighter text-white'>
-                    {title}
-                </h2>
-                <div className='flex flex-col lg:flex-row gap-6'>
-                    {children}
-                </div>
-            </div>
-        </section>
-    );
+  return (
+    <section
+      id="skills"
+      className="w-full py-16"
+    >
+      <div className="mx-auto max-w-6xl px-4">
+        <h2 className="text-shadow-2xl mb-10 text-center text-4xl font-bold tracking-tighter text-neutral-100 dark:text-neutral-950">
+          {title}
+        </h2>
+        <div className="flex flex-col gap-6 lg:flex-row">{children}</div>
+      </div>
+    </section>
+  );
 }

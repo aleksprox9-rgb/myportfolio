@@ -1,7 +1,7 @@
 type IAboutConfig = {
-    path: string
-}
+  path: string;
+};
 
 export const AboutConfig: IAboutConfig = {
-    path: 'body.about.stats',
-}
+  path: "body.about.stats",
+};

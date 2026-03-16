@@ -3,7 +3,8 @@
     "nav": {
       "projects": "Projects",
       "about": "About",
-      "contact": "Contact"
+      "contact": "Contact",
+      "skills": "Skills"
     }
   },
   "body": {
@@ -23,17 +24,32 @@
         "title": "Frontend",
         "desc": "This is the «face» of the website. Everything you see, click, and interact with: from intuitive buttons to smooth animations and mobile-friendly layouts.",
         "technologies": {
-          "react": { "name": "React", "desc": "Component architecture, hooks, performance optimization." },
-          "typescript": { "name": "TypeScript", "desc": "Strong typing, generics, scalable frontend architecture." },
-          "vite": { "name": "Vite", "desc": "Fast dev environment and optimized builds." }
+          "react": {
+            "name": "React",
+            "desc": "Component architecture, hooks, performance optimization."
+          },
+          "typescript": {
+            "name": "TypeScript",
+            "desc": "Strong typing, generics, scalable frontend architecture."
+          },
+          "vite": {
+            "name": "Vite",
+            "desc": "Fast dev environment and optimized builds."
+          }
         }
       },
       "backend": {
         "title": "Backend",
         "desc": "This is the «brain» and logic of the project. It handles data, user registration, and everything happening «under the hood» to ensure the site runs fast and securely.",
         "technologies": {
-          "go": { "name": "Go", "desc": "REST APIs, concurrency, clean architecture." },
-          "postgresql": { "name": "PostgreSQL", "desc": "Schema design, indexing, transactions." },
+          "go": {
+            "name": "Go",
+            "desc": "REST APIs, concurrency, clean architecture."
+          },
+          "postgresql": {
+            "name": "PostgreSQL",
+            "desc": "Schema design, indexing, transactions."
+          },
           "kafka": { "name": "Kafka", "desc": "Event-driven communication." }
         }
       },

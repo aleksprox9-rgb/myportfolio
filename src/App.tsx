@@ -1,5 +1,5 @@
-import { Body } from './modules/layout/body/Body'
-import Header from './modules/layout/header/Header'
+import { Body } from "./modules/layout/body/Body";
+import Header from "./modules/layout/header/Header";
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <Header />
       <Body />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,13 +1,13 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import { ThemeProvider } from './core/theme/ThemeProvider'
-import { MainRoutes } from './core/router/router'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import { ThemeProvider } from "./core/theme/ThemeProvider";
+import { MainRoutes } from "./core/router/router";
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider>
       <MainRoutes />
     </ThemeProvider>
   </StrictMode>,
-)
+);
