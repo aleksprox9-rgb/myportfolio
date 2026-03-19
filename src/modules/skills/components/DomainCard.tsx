@@ -13,7 +13,7 @@ export function DomainCard({
   technologies,
 }: DomainCardProps) {
   return (
-    <div className="flex-1 rounded-2xl border p-6 shadow-sm border-neutral-300/15 bg-neutral-600/15">
+    <div className="flex flex-col rounded-2xl border border-neutral-300/15 bg-neutral-600/15 p-6 shadow-sm">
       <h3 className="mb-2 text-2xl font-medium text-neutral-800 dark:text-neutral-200">
         {title}
       </h3>
@@ -24,7 +24,7 @@ export function DomainCard({
         </p>
       )}
 
-      <div className="flex flex-wrap gap-3">
+      <div className="grid grid-cols-2 gap-3">
         {technologies.map((tech) => (
           <TechnologyBadge
             key={tech.id}
