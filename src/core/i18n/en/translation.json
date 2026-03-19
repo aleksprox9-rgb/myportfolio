@@ -20,47 +20,59 @@
     },
     "skills": {
       "title": "Skills",
-      "frontend": {
-        "title": "Frontend",
-        "desc": "This is the «face» of the website. Everything you see, click, and interact with: from intuitive buttons to smooth animations and mobile-friendly layouts.",
-        "technologies": {
-          "react": {
-            "name": "React",
-            "desc": "Component architecture, hooks, performance optimization."
-          },
-          "typescript": {
-            "name": "TypeScript",
-            "desc": "Strong typing, generics, scalable frontend architecture."
-          },
-          "vite": {
-            "name": "Vite",
-            "desc": "Fast dev environment and optimized builds."
-          }
+      "categories": {
+        "frontend": {
+          "title": "Frontend",
+          "desc": "This is the «face» of the website. Everything you see, click, and interact with: from intuitive buttons to smooth animations and mobile-friendly layouts."
+        },
+        "backend": {
+          "title": "Backend",
+          "desc": "This is the «brain» and logic of the project. It handles data, user registration, and everything happening «under the hood» to ensure the site runs fast and securely."
+        },
+        "tools": {
+          "title": "Tools",
+          "desc": "My professional toolkit. The technologies and software that help me write clean code, collaborate effectively, and turn ideas into finished products."
         }
       },
-      "backend": {
-        "title": "Backend",
-        "desc": "This is the «brain» and logic of the project. It handles data, user registration, and everything happening «under the hood» to ensure the site runs fast and securely.",
-        "technologies": {
-          "go": {
-            "name": "Go",
-            "desc": "REST APIs, concurrency, clean architecture."
-          },
-          "postgresql": {
-            "name": "PostgreSQL",
-            "desc": "Schema design, indexing, transactions."
-          },
-          "kafka": { "name": "Kafka", "desc": "Event-driven communication." }
-        }
-      },
-      "tools": {
-        "title": "Tools",
-        "desc": "My professional toolkit. The technologies and software that help me write clean code, collaborate effectively, and turn ideas into finished products.",
-        "technologies": {
-          "git": { "name": "Git", "desc": "Version control" },
-          "docker": { "name": "Docker", "desc": "Containerization" },
-          "bun": { "name": "Bun", "desc": "Fast runtime" },
-          "vim": { "name": "Vim", "desc": "Efficiency" }
+      "technologies": {
+        "react": {
+          "name": "React",
+          "desc": "Component architecture and hooks."
+        },
+        "typescript": {
+          "name": "TypeScript",
+          "desc": "Strong typing and scalable architecture."
+        },
+        "vite": { "name": "Vite", "desc": "Fast development environment." },
+        "bun": {
+          "name": "Bun",
+          "desc": "Fast runtime and package management."
+        },
+        "golang": {
+          "name": "Golang",
+          "desc": "High-performance microservices and concurrency."
+        },
+        "redis": {
+          "name": "Redis",
+          "desc": "An in-memory data structure store used as a database, cache, and message broker."
+        },
+        "postgresql": {
+          "name": "PostgreSQL",
+          "desc": "Complex queries and schema design."
+        },
+        "kafka": { "name": "Kafka", "desc": "Event-driven systems." },
+        "docker": {
+          "name": "Docker",
+          "desc": "Containerization and deployment."
+        },
+        "kubernetes": {
+          "name": "Kubernetes",
+          "desc": "Orchestration and scaling."
+        },
+        "git": { "name": "Git", "desc": "Version control." },
+        "linux": {
+          "name": "Linux",
+          "desc": "An open-source operating system, the industry standard for server environments and DevOps"
         }
       }
     }

@@ -1,17 +1,13 @@
-import type { SkillCategory, Technology } from "@/types";
+import type { Technology } from "@/types";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { SKILLS } from "../skills.data";
 
-type Props = Technology & {
-  category: SkillCategory;
-};
-
-export function TechnologyBadge({ id, icon, category }: Props) {
+export function TechnologyBadge({ id, icon }: Technology) {
   const { t } = useTranslation();
   const [isActive, setIsActive] = useState(false);
 
-  const baseKey = `${SKILLS.path}.${category}.technologies.${id}`;
+  const baseKey = `${SKILLS.path}.technologies.${id}`;
 
   return (
     <div

@@ -10,11 +10,10 @@ export default function ExampleSkills() {
   return (
     <SkillsSection title={t(`${SKILLS.path}.title`)}>
       {(Object.keys(SKILLS.groups) as SkillCategory[]).map((key) => {
-        const baseKey = `${SKILLS.path}.${key}`;
+        const baseKey = `${SKILLS.path}.categories.${key}`;
         return (
           <DomainCard
             key={key}
-            category={key}
             description={t(`${baseKey}.desc`)}
             title={t(`${baseKey}.title`)}
             technologies={SKILLS.groups[key].technologies}

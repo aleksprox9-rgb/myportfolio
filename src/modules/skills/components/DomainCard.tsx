@@ -1,15 +1,13 @@
-import type { SkillCategory, Technology } from "@/types";
+import type { Technology } from "@/types";
 import { TechnologyBadge } from "./TechnologyBadge";
 
 type DomainCardProps = {
-  category: SkillCategory;
   title: string;
   description?: string;
   technologies: Technology[];
 };
 
 export function DomainCard({
-  category,
   title,
   description,
   technologies,
@@ -30,7 +28,6 @@ export function DomainCard({
         {technologies.map((tech) => (
           <TechnologyBadge
             key={tech.id}
-            category={category}
             {...tech}
           />
         ))}
