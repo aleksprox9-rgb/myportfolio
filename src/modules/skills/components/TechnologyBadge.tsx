@@ -1,13 +1,13 @@
 import type { Technology } from "@/types";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { SKILLS } from "../skills.data";
+import { SkillsConfig } from "../skills.data";
 
 export function TechnologyBadge({ id, icon }: Technology) {
   const { t } = useTranslation();
   const [isActive, setIsActive] = useState(false);
 
-  const baseKey = `${SKILLS.path}.technologies.${id}`;
+  const baseKey = `${SkillsConfig.path}.technologies.${id}`;
 
   return (
     <div

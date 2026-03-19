@@ -16,8 +16,3 @@ export type SkillGroup = {
   titleId: SkillCategory;
   technologies: Technology[];
 };
-
-export type SkillsConfig = {
-  path: string;
-  groups: Record<SkillCategory, SkillGroup>;
-};

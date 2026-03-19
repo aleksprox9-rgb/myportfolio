@@ -1,4 +1,5 @@
-import type { SkillsConfig } from "@/types";
+import { I18N_PATHS } from '@/config/i18n-paths';
+import type { SkillCategory, SkillGroup } from "@/types";
 import {
   SiApachekafka,
   SiBun,
@@ -14,8 +15,13 @@ import {
   SiVite,
 } from "react-icons/si";
 
-export const SKILLS: SkillsConfig = {
-  path: "body.skills",
+type ISkillsConfig = {
+  path: string;
+  groups: Record<SkillCategory, SkillGroup>;
+};
+
+export const SkillsConfig: ISkillsConfig = {
+  path: I18N_PATHS.skills,
   groups: {
     frontend: {
       titleId: "frontend",
