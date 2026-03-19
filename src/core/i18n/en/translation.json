@@ -12,8 +12,8 @@
       "title": "About me",
       "bio": "I am a full-stack developer focused on building scalable web applications. I work across both frontend and backend, paying attention to architecture, performance and long-term maintainability. \n\n My journey started with backend development in Python to understand core programming concepts. Later I moved to Golang and expanded my stack with TypeScript and React, allowing me to design and build complete applications from interface to infrastructure.",
       "stats": [
-        { "label": "Years learning development", "value": "3+" },
-        { "label": "Techonologies used", "value": "10+" },
+        { "label": "Years learning development", "value": "1+" },
+        { "label": "Techonologies used", "value": "12+" },
         { "label": "Development focus", "value": "Full-stack & Architecture" },
         { "label": "Architecture priority", "value": "Maintainability" }
       ]
