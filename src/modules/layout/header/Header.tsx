@@ -10,7 +10,7 @@ export default function Header() {
 
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full border-b border-gray-200 bg-neutral-800 dark:border-gray-800 dark:bg-white">
+    <header className="fixed top-0 left-0 z-50 w-full border-b border-neutral-800 bg-neutral-200 dark:border-neutral-200 dark:bg-neutral-800">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         {/* Logo */}
         <div className="text-2xl font-bold tracking-tight text-rose-500">
@@ -26,7 +26,7 @@ export default function Header() {
             onClick={toggleTheme}
             aria-label="Toggle theme"
           >
-            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+            {theme === "dark" ? <Moon size={18} /> : <Sun size={18} />}
           </Button>
 
           <Button

@@ -28,9 +28,9 @@ type StatProps = {
 
 function Stat({ value, label }: StatProps) {
   return (
-    <div className="m-4 rounded-2xl border border-neutral-800 bg-neutral-900 p-6">
-      <div className="text-2xl font-semibold">{value}</div>
-      <div className="mt-1 text-sm text-neutral-400">{label}</div>
+    <div className="m-4 rounded-2xl border bg-neutral-600/10 border-neutral-300/15 p-6">
+      <div className="text-2xl font-semibold text-neutral-800 dark:text-neutral-100">{value}</div>
+      <div className="mt-1 text-sm text-neutral-800 dark:text-neutral-200">{label}</div>
     </div>
   );
 }

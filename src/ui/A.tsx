@@ -10,7 +10,7 @@ export function A({
     <a
       {...props}
       className={cn(
-        "text-lg font-medium text-neutral-400 transition-colors duration-200 ease-in-out hover:text-rose-600 active:text-indigo-500",
+        "text-sm sm:text-lg font-medium text-neutral-500 transition-colors duration-200 ease-in-out hover:text-rose-600 active:text-indigo-500",
         className,
       )}
     >

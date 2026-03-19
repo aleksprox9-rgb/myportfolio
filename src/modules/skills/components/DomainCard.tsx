@@ -15,11 +15,13 @@ export function DomainCard({
   technologies,
 }: DomainCardProps) {
   return (
-    <div className="flex-1 rounded-2xl border border-neutral-800 bg-neutral-900 p-6 shadow-sm">
-      <h3 className="mb-2 text-xl font-medium">{title}</h3>
+    <div className="flex-1 rounded-2xl border p-6 shadow-sm border-neutral-300/15 bg-neutral-600/15">
+      <h3 className="mb-2 text-2xl font-medium text-neutral-800 dark:text-neutral-200">
+        {title}
+      </h3>
 
       {description && (
-        <p className="mb-6 to-neutral-500 text-sm leading-relaxed">
+        <p className="mb-6 text-base leading-relaxed text-neutral-900 dark:text-neutral-200">
           {description}
         </p>
       )}
