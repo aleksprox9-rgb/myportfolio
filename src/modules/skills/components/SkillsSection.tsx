@@ -18,9 +18,7 @@ export function SkillsSection({ title, children }: SkillsSectionProps) {
             {title}
           </h2>
         </Reveal>
-        <Reveal transition={{delay: 0.4, duration: 0.5}}>
-          <div className="flex flex-col gap-6 lg:flex-row">{children}</div>
-        </Reveal>
+        <div className="flex flex-col gap-6 lg:flex-row">{children}</div>
       </div>
     </section>
   );

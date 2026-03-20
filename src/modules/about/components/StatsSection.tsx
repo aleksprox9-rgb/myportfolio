@@ -13,7 +13,7 @@ export function StatsSection({ data }: StatsSectionProps) {
   return (
     <div>
       {data.map((stat, index) => (
-        <Reveal transition={{ delay: 0.2 * (3 + index) }}>
+        <Reveal transition={{ delay: index * 0.1 + 0.2 }}>
           <Stat
             key={index}
             value={stat.value}
