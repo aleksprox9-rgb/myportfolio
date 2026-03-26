@@ -1,8 +1,8 @@
-import type { Answers, ConstructorConfig } from "../constructor.type";
+import type { Answers, IConstructorConfig } from "../constructor.type";
 import { getSelectedOptions } from "./calculator";
 
 export function buildMessage(
-  config: ConstructorConfig,
+  config: IConstructorConfig,
   answers: Answers,
 ): string {
   const selectedOptions = getSelectedOptions(config, answers);
