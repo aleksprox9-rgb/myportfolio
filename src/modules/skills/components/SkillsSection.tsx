@@ -18,7 +18,7 @@ export function SkillsSection({ title, children }: SkillsSectionProps) {
             {title}
           </h2>
         </Reveal>
-        <div className="flex flex-col gap-6 lg:flex-row">{children}</div>
+        <div className="grid lg:grid-cols-3 items-stretch gap-6">{children}</div>
       </div>
     </section>
   );

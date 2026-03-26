@@ -1,7 +1,6 @@
 {
   "header": {
     "nav": {
-      "projects": "Projects",
       "about": "About",
       "contact": "Contact",
       "skills": "Skills"
@@ -74,6 +73,94 @@
           "name": "Linux",
           "desc": "An open-source operating system, the industry standard for server environments and DevOps"
         }
+      }
+    },
+    "constructor": {
+      "questions": {
+        "project_type": "Project Type",
+        "features": "Functionality",
+        "visual_and_interactive": "Visuals & Interactivity",
+        "promotion_and_support": "Promotion & Support"
+      },
+      "options": {
+        "landing": {
+          "label": "Landing Page",
+          "description": "A single-page website designed to convert visitors into customers."
+        },
+        "corporate": {
+          "label": "Corporate Website",
+          "description": "A multi-page site representing your business and services."
+        },
+        "ecommerce": {
+          "label": "E-commerce",
+          "description": "An online store with a shopping cart and payment integration."
+        },
+        "portfolio": {
+          "label": "Portfolio",
+          "description": "A visually-driven site to showcase your creative work."
+        },
+        "complex_service": {
+          "label": "Complex Web Service",
+          "description": "Custom platforms with user dashboards and unique business logic."
+        },
+        "admin_panel": {
+          "label": "Admin Panel",
+          "description": "A user-friendly CMS to manage content without any coding."
+        },
+        "payments": {
+          "label": "Cart & Payments",
+          "description": "Integration of payment gateways for online transactions."
+        },
+        "feedback_forms": {
+          "label": "Feedback Forms",
+          "description": "Callback buttons, surveys, and interactive quizzes."
+        },
+        "auth": {
+          "label": "Authentication",
+          "description": "User registration, login system, and personal accounts."
+        },
+        "multilinguality": {
+          "label": "Multi-language Support",
+          "description": "Localization of the website into multiple languages (i18n)."
+        },
+        "themes": {
+          "label": "Dark & Light Themes",
+          "description": "A color scheme switcher to enhance user experience."
+        },
+        "mobile": {
+          "label": "Responsive Design",
+          "description": "Optimized layout for smartphones, tablets, and desktops."
+        },
+        "basic_animation": {
+          "label": "Basic Animation",
+          "description": "Smooth element appearances and scroll effects."
+        },
+        "hard_animation": {
+          "label": "Advanced Animation",
+          "description": "3D elements (R3F) and complex motion graphics."
+        },
+        "analytics": {
+          "label": "Analytics",
+          "description": "Setup of Google Analytics or other tracking tools."
+        },
+        "seo": {
+          "label": "Basic SEO",
+          "description": "Search engine optimization and meta-tag configuration."
+        },
+        "pagespeed": {
+          "label": "Speed Optimization",
+          "description": "Achieving the 'Green Zone' in Google PageSpeed Insights."
+        },
+        "hosting_and_domain": {
+          "label": "Deployment",
+          "description": "Assistance with domain registration and hosting setup."
+        }
+      },
+      "buttons": {
+        "next": "Next",
+        "back": "Back",
+        "restart": "Restart",
+        "get_result": "Calculate Cost"
       }
     }
   }

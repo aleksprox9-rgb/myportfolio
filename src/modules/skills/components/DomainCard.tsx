@@ -28,18 +28,18 @@ export function DomainCard({
   }, [technologies, t]);
 
   return (
-    <div className="flex flex-col rounded-2xl border border-neutral-300/15 bg-neutral-600/15 p-6 shadow-sm">
+    <div className="grid h-full grid-rows-[auto-auto-1fr] rounded-2xl border border-neutral-300/15 bg-neutral-600/15 p-4 shadow-sm">
       <h3 className="mb-2 text-2xl font-medium text-neutral-800 dark:text-neutral-200">
         {title}
       </h3>
 
       {description && (
-        <p className="mb-6 text-base h-35 leading-relaxed text-neutral-900 dark:text-neutral-200">
+        <p className="mb-4 text-base leading-relaxed text-neutral-900 dark:text-neutral-200">
           {description}
         </p>
       )}
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="mt-auto grid sm:grid-cols-4 md:grid-cols-2 grid-cols-2 gap-3 self-end">
         {techList.map(({ id, icon, name, desc }) => (
           <TechnologyBadge
             key={id}

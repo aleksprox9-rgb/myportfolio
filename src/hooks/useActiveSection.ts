@@ -11,7 +11,7 @@ export function useActiveSection(sectionIds: string[]) {
           }
         });
       },
-      { rootMargin: "-30% 0% -70% 0%" },
+      { rootMargin: "-50% 0% -50% 0%" },
     );
 
     sectionIds.forEach((id) => {
